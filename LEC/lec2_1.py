@@ -11,3 +11,5 @@
 #     print(line)
 # data.close()
 
+import lec1
+print (lec1.f(1))
