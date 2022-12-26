@@ -12,31 +12,12 @@
 #     return result
 #
 # my_list = ['wef', 'dfd', 'sfer', 'dfd',  'efff', 'dfd', 'eeee']
-# print(find_index_coin(my_list, 'dfd'))
+# print(find_index_coin(my_list, 'dfd')>
 
-a = int(input())
+a = 'Правильность'
 
-if a == 0:
-    print('зеленый')
-elif 1 <= a <= 10:
-    if a % 2 == 0:
-        print('черный')
-    if a % 2 != 0:
-        print('красный')
-elif 11 <= a <= 18:
-    if a % 2 == 0:
-        print('черный')
-    if a % 2 != 0:
-        print('красный')
-elif 19 <= a <= 28:
-    if a % 2 == 0:
-        print('черный')
-    if a % 2 != 0:
-        print('красный')
-elif 29 <= a <= 36:
-    if a % 2 == 0:
-        print('черный')
-    if a % 2 != 0:
-        print('красный')
-else:
-    print('ошибка ввода')
+#while a :
+    print(a[:-1])
+
+
+
