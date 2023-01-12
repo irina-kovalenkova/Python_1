@@ -17,8 +17,9 @@ from math import sqrt
 #             file.write(f"{x}\n")
 #         else:
 #             file.write("Нет корней\n")
-            
+#         file.close()    
 # discr (2, 1, -1)
+
 
 #_____________________________________________________
 # Второй вариант решения: 
@@ -33,7 +34,11 @@ def roots_equ(a, b, c):
             my_f.write(f"The root: {-b / (2 * a):.2f}\n")
         else:
             my_f.write("There are no roots.\n")
-            
+        my_f.close()        
 # 1 2 -3, 5 6 -7, 8 9 -10
 for i in range(3):
-    roots_equ(int(input("Enter the cpefficient 'a': ")), int(input("Enter the cpefficient 'b': ")), int(input("Enter the cpefficient 'c': ")))1
+    roots_equ(int(input("Enter the cpefficient 'a': ")), 
+              int(input("Enter the cpefficient 'b': ")), 
+              int(input("Enter the cpefficient 'c': ")))
+
+
