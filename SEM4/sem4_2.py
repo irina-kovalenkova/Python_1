@@ -4,18 +4,36 @@
 
 from math import sqrt
 
-def discr(a, b, c):
-    D = b**2-4*a*c
-    with open("diskr.txt", "a", encoding="utf - 8") as file:
-        file.write(f"{a}x² + {b}x + {c} = 0\n")
-        if D > 0:
-            x1 = (-b + sqrt(D)/(2*a))
-            x2 = (-b - sqrt(D)/(2*a))
-            file.write(f"{x1}, {x2}\n")
-        elif D == 0:
-            x = -b/(2*a)
-            file.write(f"{x}\n")
-        else:
-            file.write("Нет корней\n")
+# def discr(a, b, c):
+#     D = b**2-4*a*c
+#     with open("diskr.txt", "a", encoding="utf - 8") as file:
+#         file.write(f"{a}x² + {b}x + {c} = 0\n")
+#         if D > 0:
+#             x1 = (-b + sqrt(D)/(2*a))
+#             x2 = (-b - sqrt(D)/(2*a))
+#             file.write(f"{x1}, {x2}\n")
+#         elif D == 0:
+#             x = -b/(2*a)
+#             file.write(f"{x}\n")
+#         else:
+#             file.write("Нет корней\n")
             
-discr (3, 1, -1)
+# discr (2, 1, -1)
+
+#_____________________________________________________
+# Второй вариант решения: 
+
+def roots_equ(a, b, c):
+    d = b ** 2 - 4 * a * c
+    with open("roots.txt", "a", encoding="utf-8") as my_f:
+        if d > 0 and a:
+            my_f.write(f"The first root: {(-b + sqrt(d)) / (2 * a):.2f}\n")
+            my_f.write(f"The first root: {(-b - sqrt(d)) / (2 * a):.2f}\n")
+        elif d == 0 and a:
+            my_f.write(f"The root: {-b / (2 * a):.2f}\n")
+        else:
+            my_f.write("There are no roots.\n")
+            
+# 1 2 -3, 5 6 -7, 8 9 -10
+for i in range(3):
+    roots_equ(int(input("Enter the cpefficient 'a': ")), int(input("Enter the cpefficient 'b': ")), int(input("Enter the cpefficient 'c': ")))1
