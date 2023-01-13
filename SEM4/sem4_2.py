@@ -2,7 +2,7 @@
 # с помощью дополнительных библиотек python. Запросите значения А, В, С 3 раза.
 # Уравнения и корни запишите в файл.
 
-from math import sqrt
+# from math import sqrt
 
 # def discr(a, b, c):
 #     D = b**2-4*a*c
@@ -24,21 +24,21 @@ from math import sqrt
 #_____________________________________________________
 # Второй вариант решения: 
 
-def roots_equ(a, b, c):
-    d = b ** 2 - 4 * a * c
-    with open("roots.txt", "a", encoding="utf-8") as my_f:
-        if d > 0 and a:
-            my_f.write(f"The first root: {(-b + sqrt(d)) / (2 * a):.2f}\n")
-            my_f.write(f"The first root: {(-b - sqrt(d)) / (2 * a):.2f}\n")
-        elif d == 0 and a:
-            my_f.write(f"The root: {-b / (2 * a):.2f}\n")
-        else:
-            my_f.write("There are no roots.\n")
-        my_f.close()        
-# 1 2 -3, 5 6 -7, 8 9 -10
-for i in range(3):
-    roots_equ(int(input("Enter the cpefficient 'a': ")), 
-              int(input("Enter the cpefficient 'b': ")), 
-              int(input("Enter the cpefficient 'c': ")))
+# def roots_equ(a, b, c):
+#     d = b ** 2 - 4 * a * c
+#     with open("roots.txt", "a", encoding="utf-8") as my_f:
+#         if d > 0 and a:
+#             my_f.write(f"The first root: {(-b + sqrt(d)) / (2 * a):.2f}\n")
+#             my_f.write(f"The first root: {(-b - sqrt(d)) / (2 * a):.2f}\n")
+#         elif d == 0 and a:
+#             my_f.write(f"The root: {-b / (2 * a):.2f}\n")
+#         else:
+#             my_f.write("There are no roots.\n")
+#         my_f.close()        
+# # 1 2 -3, 5 6 -7, 8 9 -10
+# for i in range(3):
+#     roots_equ(int(input("Enter the cpefficient 'a': ")), 
+#               int(input("Enter the cpefficient 'b': ")), 
+#               int(input("Enter the cpefficient 'c': ")))
 
 
