@@ -49,19 +49,19 @@
 # Enter the required accuracy '0.0001': 0.000001
 #
 # out
-# 9.000000
-from decimal import *
-#import decimal
-n = float(input('ВВедите число: '))
-#a = input('a: ')
-#d = len ( str(a).split('.')[1] )
-#print(d)
-
-#decimal.getcontext().prec = 3
-getcontext().prec = 3
-res = Decimal(n)
+# # 9.000000
+# from decimal import *
+# #import decimal
+# n = float(input('ВВедите число: '))
+# #a = input('a: ')
+# #d = len ( str(a).split('.')[1] )
+# #print(d)
+#
+# #decimal.getcontext().prec = 3
+# getcontext().prec = 3
+# res = Decimal(n)
 #k = decimal(n)
-print(res)
+# print(res)
 # Decimal(1) / Decimal(7)
 
 
@@ -94,5 +94,18 @@ print(res)
 # #d = int(input("Введите число для заданной точности числа Пи:\n"))
 # d = len ( str(a).split('.')[1] )
 # print(f'число Пи с заданной точностью {d} равно {round(a, d)}')
+#  - список длиной k из последовательности population.
+# #__________________________________________________________
+# import random as rd
+# a = random.sample(population, k)
+# l = [i for i in range(1, 11)]
+# rd.shuffle(l)
+# for num in l:
+#     print(num)
 
-#__________________________________________________________
+txt = input("Введите текст через пробел:\n")
+print(f"Исходный текст: {txt}")
+find_txt = "абв"
+lst = [i for i in txt.split() if find_txt not in i]
+print(f'Результат: {" ".join(lst)}')
+
