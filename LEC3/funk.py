@@ -130,17 +130,17 @@
 #     print(e)
 #_______________________________________________________________________
 
-list1 = [1, 2, 3, 4, 5]
+# list1 = [1, 2, 3, 4, 5]
 
-print(len(list1))          # 5 длина списка
-print(list1.pop())         # убирает последний элемент из списка
-print(list1)
+# print(len(list1))          # 5 длина списка
+# print(list1.pop())         # убирает последний элемент из списка
+# print(list1)
 
-print(list1.pop(2))         # убирает 2 по индексу элемент из списка
-print(list1)
+# print(list1.pop(2))         # убирает 2 по индексу элемент из списка
+# print(list1)
 
-print(list1.insert(2, 11))         # ставит вместо 2 по индексу 11
-print(list1) 
+# print(list1.insert(2, 11))         # ставит вместо 2 по индексу 11
+# print(list1) 
 
-print(list1.append(11))         # добавление в конец списка
-print(list1) 
+# print(list1.append(11))         # добавление в конец списка
+# print(list1) 
