@@ -30,3 +30,6 @@ def rle_decode(name):
                 print("".join(starmap(lambda x, y: x * y, word_nums)))
     else:
         print("The files do not exist in the system!")
+
+rle_encode(input("Введите имя файла c текстом: "), input("Введите имя файла для записи: "))
+rle_decode(input("Введите имя файла для декодирования: "))
