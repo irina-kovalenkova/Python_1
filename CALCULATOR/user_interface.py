@@ -17,8 +17,8 @@ def select_type_num():
             exit()
         elif type_num == '1':
             operation_for_rational_numbers()
-        elif type_num == '2':
-            operation_for_complex_number()
+        # elif type_num == '2':
+        #     operation_for_complex_number()
         elif type_num not in ['1', '2', '0']:
             logging.error("Error")
             print("Error. Incorrect input.")
